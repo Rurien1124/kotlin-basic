@@ -1,21 +1,21 @@
 plugins {
-    kotlin("jvm") version "2.2.20"
+  kotlin("jvm") version "2.2.20"
 }
 
 group = "io.github.rurien"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenCentral()
+  mavenCentral()
 }
 
 dependencies {
-    testImplementation(kotlin("test"))
+  testImplementation(kotlin("test"))
 }
 
 tasks.test {
-    useJUnitPlatform()
+  useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(21)
+  jvmToolchain(21)
 }
