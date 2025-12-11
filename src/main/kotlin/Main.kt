@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-  println("Hello Kotlin!")
+    println("Hello Kotlin!")
 
-  println("Arguments: ${args.joinToString()}")
+    println("Arguments: ${args.joinToString()}")
 }

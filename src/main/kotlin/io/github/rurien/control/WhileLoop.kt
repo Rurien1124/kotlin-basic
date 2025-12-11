@@ -4,28 +4,26 @@ import kotlin.random.Random
 
 /** While 반복문 */
 class WhileLoop {
+    companion object {
+        @JvmStatic
+        fun main(args: Array<String>) {
+            var i = Random.nextInt(10)
 
-  companion object {
+            while (i > 0) {
+                print("$i ")
 
-    @JvmStatic
-    fun main(args: Array<String>) {
-      var i = Random.nextInt(10)
+                if (i >= 9) {
+                    break
+                } else {
+                    i--
+                }
+            }
 
-      while (i > 0) {
-        print("$i ")
+            println()
 
-        if (i >= 9) {
-          break
-        } else {
-          i--
+            do {
+                println("Execute once")
+            } while (false)
         }
-      }
-
-      println()
-
-      do {
-        println("Execute once")
-      } while (false)
     }
-  }
 }
