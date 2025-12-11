@@ -2,7 +2,8 @@ package io.github.rurien.control
 
 import kotlin.random.Random
 
-class Conditional {
+/** If 조건문 */
+class IfConditional {
 
     companion object {
         @JvmStatic
