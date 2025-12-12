@@ -22,11 +22,13 @@ data class DataClass(
     fun main(args: Array<String>) {
       val mydata = DataClass("MyData", 123)
       val copiedData = mydata.copy()
+      val differentCopiedData = mydata.copy(name = "CopiedMyData")
 
       println("- ToString")
 
       println(mydata)
       println(copiedData)
+      println(differentCopiedData)
 
       println("\n- Field")
       println(mydata.name)
@@ -42,6 +44,7 @@ data class DataClass(
 
       println("\n- Equals")
       println(mydata == copiedData)
+      println(mydata == differentCopiedData)
       println(mydata === copiedData)
     }
   }
