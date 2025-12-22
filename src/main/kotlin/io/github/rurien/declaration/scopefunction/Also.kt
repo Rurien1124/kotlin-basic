@@ -4,6 +4,7 @@ package io.github.rurien.declaration.scopefunction
  * 범위 지정 함수 `,also{it -> ()}`
  *
  * T 를 파라미터로 받아서 T 가 가능한 동작 수행 후 T 를 그대로 리턴
+ *
  * let{it -> ()} 와 다른 점은, let 은 결과를 특정한 값으로 리턴하고
  * also{it -> ()} 는 수신 객체 T 를 리턴
  */
